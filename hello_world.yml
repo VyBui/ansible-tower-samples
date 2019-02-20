@@ -6,7 +6,7 @@
         msg: "Hello World!"
 
     - name: Compile C program
-      shell: gcc  -o compileC/hello_world.c hello_world
+      shell: gcc -o compileC/hello_world compileC/hello_world.c
 
     - name: Run C file
-      shell: ./hello_world
+      shell: ./compileC/hello_world
