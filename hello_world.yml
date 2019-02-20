@@ -5,9 +5,7 @@
       debug:
         msg: "Hello World!"
 
-- name: Compile C program
-  hosts: all
-  tasks:
     - name: Compile C program
-      cmd: gcc  -o compileC/hello_world.c hello_world
-           ./hello_world
+      shell: gcc  -o compileC/hello_world.c hello_world
+        ./hello_world
+
