@@ -7,5 +7,6 @@
 
     - name: Compile C program
       shell: gcc  -o compileC/hello_world.c hello_world
-        ./hello_world
 
+    - name: Run C file
+      shell: ./hello_world
